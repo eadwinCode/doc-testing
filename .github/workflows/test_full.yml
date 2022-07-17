@@ -36,8 +36,4 @@ jobs:
         with:
           python-version: 3.9
       - name: Install Flit
-        run: pip install flit
-      - name: Install Dependencies
-        run: flit install --symlink
-      - name: Build and Deploy Document
-        run: mkdocs gh-deploy --force
+        run: "scripts/install"
